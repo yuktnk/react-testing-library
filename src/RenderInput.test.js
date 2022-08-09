@@ -34,6 +34,6 @@ describe("Console button conditionally triggerd", () => {
         const inputValue = screen.getByPlaceholderText("Enter");
         await userEvent.type(inputValue, "test");
         await userEvent.click(screen.getByRole("button"));
-        expect(outputConsole).toHaveBeenCalledTimes(2); // consoleに1回出力される
+        expect(outputConsole).toHaveBeenCalledTimes(1); // consoleに1回出力される
     });
 });
