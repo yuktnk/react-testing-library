@@ -11,7 +11,7 @@ describe("Rendering", () => {
     });
 });
 
-describe("Input form onChange event", () => {
+describe("Input from onChange event", () => {
     it("Should update input value correctly", async () => {
         render(<RenderInput />);
         const inputValue = screen.getByPlaceholderText("Enter");
